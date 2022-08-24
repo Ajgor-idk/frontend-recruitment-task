@@ -1,0 +1,11 @@
+:root {
+  --Primary-color: #e4c1ae;
+  --Text-color: #121212;
+  --Btn-color: #ffffff;
+  --Heading-size: 42px;
+  --Main-size: 16px;
+  --Heading-weight: 700;
+  --Accent-weight: 600;
+  --Main-weight: 300;
+  --Font-family: "Roboto", sans-serif;
+}

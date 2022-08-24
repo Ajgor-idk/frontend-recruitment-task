@@ -1,11 +1,65 @@
 @import url("./reset.css");
 @import url("./variables.css");
 
-body {
-  box-sizing: content-box;
+* {
+  box-sizing: border-box;
   font-family: var(--Font-family);
 }
 
 .modal {
   display: none;
+  background-color: rgba(18, 18, 18, 0.5);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
+
+.modal-content {
+  display: flex;
+  background-color: white;
+  padding: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info > h1 {
+  font-weight: var(--Heading-weight);
+  font-size: var(--Heading-size);
+  text-align: center;
+  line-height: var(--Line-heading);
+}
+
+.info > p {
+  text-align: center;
+}
+
+.x-sign {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  justify-content: space-between;
+}
+
+.x-line {
+  background-color: black;
+  height: 100%;
+  width: 25%;
+}
+
+.line-left {
+  position: relative;
+  transform: rotate(45deg);
+  left: 0.35rem;
+}
+
+.line-right {
+  position: relative;
+  transform: rotate(-45deg);
+  right: 0.4rem;
+}
+

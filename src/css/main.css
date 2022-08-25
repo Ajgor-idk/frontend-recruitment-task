@@ -36,6 +36,7 @@ body {
 .modal-content {
   display: flex;
   background-color: white;
+  margin: 0 0.5rem;
   padding: 1rem;
   z-index: 2;
 }
@@ -113,7 +114,15 @@ figcaption {
   line-height: var(--Line-content);
 }
 
-#modal-btn {
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#modal-btn,
+.reset-btn {
   padding: 0.75rem 1.75rem;
   border: none;
   background-color: var(--Primary-color);
@@ -124,9 +133,24 @@ figcaption {
   border-radius: 4rem;
 }
 
+@media screen and (min-width: 375px) {
+  .modal-content {
+    margin: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main-image {
     content: url("/images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale\,w_784.jpg");
+  }
+
+  .reset-btn {
+    padding: 0.35rem 1.5rem;
+    width: 50%;
+  }
+
+  .info {
+    align-items: center;
   }
 }
 
@@ -162,6 +186,7 @@ figcaption {
 
   .info {
     gap: 2rem;
+    align-items: flex-start;
   }
 
   .info > h1 {
@@ -223,5 +248,10 @@ figcaption {
 
   .line-right {
     right: 0.65rem;
+  }
+
+  .reset-btn {
+    width: auto;
+    padding: 1rem 3rem;
   }
 }
